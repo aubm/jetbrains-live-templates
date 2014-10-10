@@ -139,3 +139,86 @@ Usage
 	        break;
 	}
 	$END$
+
+## Twig ##
+
+**Block**
+
+`block`
+
+	{% block $NAME$ %}
+	    $END$
+	{% endblock %}
+
+**Extends**
+
+`extends`
+
+	{% extends '$PARENT$' %}
+	$END$
+
+**Filter**
+
+`filter`
+
+	{% filter $NAME$ %}
+	    $END$
+	{% endfilter %}
+
+**For**
+
+`for`
+
+	{% for $ELEMENT$ in $ARRAY$ %}
+	    $END$
+	{% endfor %}
+
+**From**
+
+`from`
+
+	{% from '$FILE$' import $ELEMENT$ as $ALIAS$ %}
+	$END$
+
+**If**
+
+`if`
+
+	{% if $COND$ %}
+	    $END$
+	{% endif %}
+
+**Import**
+
+`import`
+
+	{% import '$FILE$' as $ALIAS$ %}
+	$END$
+
+**Include**
+
+`include`
+
+	{% include '$FILE$' %}$END$
+
+**Macro**
+
+`macro`
+
+	{% macro $NAME$($ARGS$) %}
+	    $END$
+	{% endmacro %}
+
+**Set**
+
+`set`
+
+	{% set $NAME$ = $VALUE$ %}$END$
+
+**Spaceless**
+
+`spaceless`
+
+	{% spaceless %}
+	    $END$
+	{% endspaceless %}

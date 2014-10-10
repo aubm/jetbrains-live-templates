@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Custom PHP">
-  <template name="dd" value="var_dump($VAR$); die;&#10;$END$&#10;" description="var_dump(); die" toReformat="false" toShortenFQNames="true">
+  <template name="dd" value="var_dump($VAR$);&#10;die();$END$" description="var_dump(); die" toReformat="true" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
@@ -63,21 +63,21 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="aif" value="&lt;?php if ($COND$): ?&gt;&#10;    $END$&#10;&lt;?php endif; ?&gt;" description="alternative if syntaxe" toReformat="true" toShortenFQNames="true">
+  <template name="aif" value="&lt;?php if ($COND$): ?&gt;&#10;    $END$&#10;&lt;?php endif; ?&gt;" description="alternative if syntax" toReformat="true" toShortenFQNames="true">
     <variable name="COND" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="aelse" value="&lt;?php if ($COND$): ?&gt;&#10;    $END$&#10;&lt;?php else: ?&gt;&#10;    &#10;&lt;?php endif; ?&gt;" description="alternative if else syntaxe" toReformat="true" toShortenFQNames="true">
+  <template name="aelse" value="&lt;?php if ($COND$): ?&gt;&#10;    $END$&#10;&lt;?php else: ?&gt;&#10;    &#10;&lt;?php endif; ?&gt;" description="alternative if else syntax" toReformat="true" toShortenFQNames="true">
     <variable name="COND" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="aelseif" value="&lt;?php if ($COND$): ?&gt;&#10;    &#10;&lt;?php elseif ($ELSEIFCOND$): ?&gt;&#10;    &#10;&lt;?php else: ?&gt;&#10;    &#10;&lt;?php endif; ?&gt;" description="alternative if elseif else syntaxe" toReformat="false" toShortenFQNames="true">
+  <template name="aelseif" value="&lt;?php if ($COND$): ?&gt;&#10;    &#10;&lt;?php elseif ($ELSEIFCOND$): ?&gt;&#10;    &#10;&lt;?php else: ?&gt;&#10;    &#10;&lt;?php endif; ?&gt;" description="alternative if elseif else syntax" toReformat="false" toShortenFQNames="true">
     <variable name="COND" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ELSEIFCOND" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -85,7 +85,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="afore" value="&lt;?php foreach ($ARRAY$ as $VAL$): ?&gt;&#10;    $END$&#10;&lt;?php endforeach; ?&gt;" description="alternative foreach syntaxe" toReformat="true" toShortenFQNames="true">
+  <template name="afore" value="&lt;?php foreach ($ARRAY$ as $VAL$): ?&gt;&#10;    $END$&#10;&lt;?php endforeach; ?&gt;" description="alternative foreach syntax" toReformat="true" toShortenFQNames="true">
     <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAL" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -93,7 +93,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="aforek" value="&lt;?php foreach ($ARRAY$ as $KEY$ =&gt; $VAL$): ?&gt;&#10;    $END$&#10;&lt;?php endforeach; ?&gt;" description="alternative foreach key syntaxe" toReformat="true" toShortenFQNames="true">
+  <template name="aforek" value="&lt;?php foreach ($ARRAY$ as $KEY$ =&gt; $VAL$): ?&gt;&#10;    $END$&#10;&lt;?php endforeach; ?&gt;" description="alternative foreach key syntax" toReformat="true" toShortenFQNames="true">
     <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAL" expression="" defaultValue="" alwaysStopAt="true" />

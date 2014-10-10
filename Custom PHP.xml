@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Custom PHP">
-  <template name="dd" value="var_dump($END$); die;&#10;" description="var_dump(); die" toReformat="false" toShortenFQNames="true">
+  <template name="dd" value="var_dump($END$); die;&#10;$END$&#10;" description="var_dump(); die" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>

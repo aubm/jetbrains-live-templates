@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Twig">
+  <template name="set" value="{% set $NAME$ = $VALUE$ %}$END$" description="{% set foo = '' %}" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="filter" value="{% filter $NAME$ %}&#10;    $END$&#10;{% endfilter %}" description="{% filter foo %} ... {% endfilter %}" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="for" value="{% for $ELEMENT$ in $ARRAY$ %}&#10;    $END$&#10;{% endfor %}" description="{% for i in range() %} ... {% endfor %}" toReformat="true" toShortenFQNames="true">
+    <variable name="ELEMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="if" value="{% if $COND$ %}&#10;    $END$&#10;{% endif %}" description="{% if expression %} ... {% endif %}" toReformat="true" toShortenFQNames="true">
+    <variable name="COND" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="include" value="{% include '$FILE$' %}$END$" description="{% include '..' %}" toReformat="true" toShortenFQNames="true">
+    <variable name="FILE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="block" value="{% block $NAME$ %}&#10;    $END$&#10;{% endblock %}" description="{% block name %}...{% endblock %}" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="extends" value="{% extends '$PARENT$' %}&#10;$END$" description="{% extends 'layout.twig' %}" toReformat="true" toShortenFQNames="true">
+    <variable name="PARENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="macro" value="{% macro $NAME$($ARGS$) %}&#10;    $END$&#10;{% endmacro %}" description="{% macro name(args) %}...{% endmacro %}" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="import" value="{% import '$FILE$' as $ALIAS$ %}&#10;$END$" description="{% import '....twig' as alias %}" toReformat="true" toShortenFQNames="true">
+    <variable name="FILE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ALIAS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="from" value="{% from '$FILE$' import $ELEMENT$ as $ALIAS$ %}&#10;$END$" description="{% from '....twig' import input as input_field %}" toReformat="true" toShortenFQNames="true">
+    <variable name="FILE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ELEMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ALIAS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="spaceless" value="{% spaceless %}&#10;    $END$&#10;{% endspaceless %}" description="{% spaceless %}...{% endspaceless %}" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
+

@@ -67,12 +67,18 @@ Usage
 	    $END$
 	}
 
+**Dump**
+
+`d`
+
+	var_dump($VAR$);
+
 **Dump & Die**
 
 `dd`
 
-	var_dump($VAR$); die;
-	$END$
+	var_dump($VAR$);
+	die();$END$
 
 **If/else**
 

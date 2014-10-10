@@ -108,5 +108,10 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="t" value="$this-&gt;$END$" description="$this-&gt;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
 

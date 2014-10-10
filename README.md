@@ -140,6 +140,12 @@ Usage
 	}
 	$END$
 
+**$this->**
+
+`t`
+
+	$this->$END$
+
 ## Twig ##
 
 **Block**

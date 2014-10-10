@@ -26,3 +26,4 @@ Usage
 `dd`
 
 	var_dump($VAR$); die;
+	$END$

@@ -146,6 +146,16 @@ Usage
 
 	$this->$END$
 
+**try / catch**
+
+`try`
+
+	try {
+	    $END$
+	} catch (\Exception $e) {
+	    
+	}
+
 ## Twig ##
 
 **Block**

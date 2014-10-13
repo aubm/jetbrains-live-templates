@@ -118,5 +118,11 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="ifset" value="if (isset($VAR$)) {&#10;    $END$&#10;}" description="if (isset($VAR$)) { ... }" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
 

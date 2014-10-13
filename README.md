@@ -126,6 +126,14 @@ Usage
 	    $END$
 	}
 
+**If set**
+
+`ifset`
+
+	if (isset($VAR$)) {
+    	$END$
+	}
+
 **Swith**
 
 `switch`

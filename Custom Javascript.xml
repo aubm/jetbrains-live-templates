@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Custom Javascript">
+  <template name="log" value="console.log($END$);" description="console.log($END$);" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="fori" value="for (var _i = 0; _i &lt; $LIMIT$; _i++) {&#10;    $END$&#10;}" description="for(var _i = 0; _i &lt; $LIMIT$ ; _i++) { ... }" toReformat="true" toShortenFQNames="true">
+    <variable name="LIMIT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
+
